@@ -9,7 +9,7 @@ const logger=require('morgan')
 const session=require('express-session')
 const port=4700
 
-
+dotenv.config({path:"./.env"})
 const db=mysql.createConnection({
     host:"localhost",
     user:"root",
